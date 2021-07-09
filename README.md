@@ -100,3 +100,5 @@ document.body.innerHTML = fs.readFileSync('./calculadora.html');
 ```
 
 Después de modificar el document.body.innerHTML **jsdom** se encarga automágicamente de crearnos variables con los mismos nombres de todos los elementos que tengan un **id** asociado en el HTML. Por lo tanto desde nuestro archivo **funcionalidad.test.js** ya tenemos acceso a todos los elementos del DOM de nuestro HTML. Por ejemplo se crea la variable **resultado** (que corresponde al elemento \<span id="resultado"\>\</span\>) y que nos permite acceder al **\<span\>** que visualiza las operaciones aritméticas. Se crea la variable **uno** (que corresponde al elemento \<button id="uno"\>1\</button\>) y que nos permite acceder al **\<button\>** que contiene el número '1'. Y lo mismo aplica para el resto de elementos identificados con un 'id' en el HTML.
+
+** Para avanzar al siguiente paso cambiate a la branch llamada  paso4**
