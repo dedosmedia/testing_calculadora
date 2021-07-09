@@ -153,7 +153,7 @@ describe('Nombre del grupo de pruebas (suite)', ()=>{
 
 el **describe** nos permite agrupar varias pruebas relacionadas bajo un mismo nombre, y **test** nos permite ir creando una a una las pruebas que conforman dicho grupo o suite.
 
-Por ahora solo crearemos todas las pruebas del init(), los comentarios respecto a estas pruebas los encuentras en **funcionalidad.test.js**
+Crearemos las pruebas del init(), resolver(), limpiar() y resetear(), los comentarios respecto a estas pruebas los encuentras en **funcionalidad.test.js**
 Basicamente probamos
 
 Suite: Prueba del método init()
