@@ -83,3 +83,6 @@ Este script hace lo mismo que el primero pero además nos creará un reporte don
 La parte del **--env=jsdom** que pusimos dentro de nuestros script es necesaria dado que las pruebas se ejecutan dentro del entorno NodeJS donde no hay un navegador que pueda interpretar el DOM (En NodeJS no existen variables globales como window o document). Para solventar ese problema existe una librería llamada **jsdom** que se instala por defecto al momento de instalar **jest**.
 
 **jsdom** es una implementación del DOM y de las APIs del navegador escrita enteramente en JavaScript y que corre dentro de NodeJS. En pocas palabras le estamos indicando a **jest** que utilice la librería **jsdom** para emular el comportamiento del navegador. De esta forma ahora tenemos acceso a variables globales como **document** donde podremos cargar el contenido de nuestro HTML.
+
+
+** Para avanzar al siguiente paso cambiate a la branch llamada  paso3**
