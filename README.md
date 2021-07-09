@@ -171,6 +171,8 @@ Suite: Pruebas de función resolver()
 - [X] Que el método resolver() funcione correctamente para las cuatro operaciones matemáticas.
 
 
+**Nota**: Para ver la lógica de cada una de las pruebas y comentarios de como se hicieron, por favor referirse al archivo funcionalidad.test.js donde encontrará la lógica y algunos comentarios al respecto.
+
 En este punto con todas las pruebas ya escritas, podemos pedirle a **jest** que ejecute nuestras pruebas.
 Para ello vamos a la línea de comandos y escribimos:
 
