@@ -8,3 +8,5 @@ En este momento tenemos un proyecto web muy sencillo que es una calculadora y ba
 >estilo.css
 
 >funcionalidad.js
+
+** Para avanzar al siguiente paso cambiate a la branch llamada  paso1**
