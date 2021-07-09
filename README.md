@@ -137,3 +137,6 @@ function getVariables(){
 ```
 
 Ahora finalmente tenemos todo listo para empezar a escribir nuestras suites y los casos de prueba dentro de ellas.
+
+
+** Para avanzar al siguiente paso cambiate a la branch llamada  paso5**
