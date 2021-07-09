@@ -22,3 +22,5 @@ El comando **npm init** con el modificador **-y**  evita que se nos hagan alguna
 
 Si se desea contestar dichas preguntas sobre el proyecto para crear una configuración más personalizada, basta con que invoques el comando sin el modificador **-y**. En dicho caso al ejecutar el comando se nos harán una serie de preguntas y lo que respondamos se guardará dentro del *package.json*
 
+
+** Para avanzar al siguiente paso cambiate a la branch llamada  paso2**
