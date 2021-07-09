@@ -1,0 +1,20 @@
+{
+  "name": "testing_calculadora",
+  "version": "1.0.0",
+  "description": "En este paso vamos a convetir este proyecto en un proyecto de NodeJS.\r Para ello necesitamos crear el archivo package.json \r Que no lo creamos manualmente, sino que lo creamos ejecutando en la línea de comandos:\r >npm init -y",
+  "main": "funcionalidad.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dedosmedia/testing_calculadora.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dedosmedia/testing_calculadora/issues"
+  },
+  "homepage": "https://github.com/dedosmedia/testing_calculadora#readme"
+}
