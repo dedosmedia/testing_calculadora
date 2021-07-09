@@ -33,3 +33,8 @@ En dicho caso esa librería quedará incluida en el *package.json*  bajo la clav
 ```
 
 Una vez que hayamos instalado el jest, el npm se encargará de crearnos una carpeta llamada **node_modules**, es dentro de esta carpeta donde quedarán almacenadas todas las librerías que utiliza nuestro proyecto (incluidas las necesarias solo durante desarrollo). También se nos crea un archivo *package-lock.json* que por el momento no nos interesa.
+
+**Paso 3.**
+Con el proyecto convertido a un proyecto NodeJS, con la librería **jest** instalada. Ahora podemos empezar a crear nuestros test.
+La primer parte consiste en crear una carpeta llamada **\_\_test\_\_**
+Dentro de dicha carpeta crearemos cada uno de los archivos que queramos testear, pero con la particularidad que tengan el mismo nombre de archivo pero con la extensión **.test.js**  por ejemplo en nuestro caso queremos hacer testing a **funcionalidad.js** por lo que crearemos un archivo llamado **funcionalidad.test.js**
