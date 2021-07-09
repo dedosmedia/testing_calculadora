@@ -100,3 +100,40 @@ document.body.innerHTML = fs.readFileSync('./calculadora.html');
 ```
 
 Después de modificar el document.body.innerHTML **jsdom** se encarga automágicamente de crearnos variables con los mismos nombres de todos los elementos que tengan un **id** asociado en el HTML. Por lo tanto desde nuestro archivo **funcionalidad.test.js** ya tenemos acceso a todos los elementos del DOM de nuestro HTML. Por ejemplo se crea la variable **resultado** (que corresponde al elemento \<span id="resultado"\>\</span\>) y que nos permite acceder al **\<span\>** que visualiza las operaciones aritméticas. Se crea la variable **uno** (que corresponde al elemento \<button id="uno"\>1\</button\>) y que nos permite acceder al **\<button\>** que contiene el número '1'. Y lo mismo aplica para el resto de elementos identificados con un 'id' en el HTML.
+
+
+**Paso  4.**
+
+Recapitulando hemos hecho lo siguiente:
+- [x] Convertimos nuestra carpeta a un proyecto NodeJS ejecutando: npm init -y
+- [x] Instalamos la librería de desarrollo **jest** ejecutando: npm install --save-dev jest
+- [x] Creamos los scripts **test** y **test:coverage** editando el archivo package.json
+- [x] Incluimos dentro de los scripts la variable de entorno jsdom para permitirnos emular el navegador, agregando --env=jsdom
+- [x] Creamos la carpeta \_\_test\_\_ y dentro de ella el archivo funcionalidad.test.js
+- [x] Dentro de funcionalidad.test.js empezamos leyendo el archivo calculadora.html y escribiendolo en document.body.innerHTML
+- [x] Se nos crearon automágicamente variables con los mismos nombres de los elementos del DOM que tenían un 'id'  (ej: resultado, uno, dos, reset, suma, resta, etc) y que podemos utilizar dentro de nuestro archivo **funcionalidad.test.js**
+
+Ahora para poder testear funciones de nuestro **funcionalidad.js** dentro de los **funcionalidad.test.js**, es necesario que importemos todas las funciones que queremos testear, pero antes de importarlas es necesario que las exportemos desde **funcionalidad.js** por lo tanto se modifica el archivo para incluir lo siguiente en la última línea:
+
+funcionalidad.js
+```js
+module.exports = { limpiar, resetear, resolver, init, getVariables }
+```
+
+Y luego debemos importar estas funciones en **funcionalidad.test.js**
+
+funcionalidad.test.js
+```js
+const { limpiar, resetear, resolver, init, getVariables } = require('../funcionalidad')
+```
+
+Habiendo importado esas funciones, ya las podemos utilizar dentro de nuestras pruebas. Sin embargo en este momento dentro de nuestras pruebas no tenemos acceso a variables declaradas en **funcionalidad.js** (como operandoa, operandob y operacion) y es por eso que además exportamos una función llamada **getVariables** que haremos a continuación.  **getVariables** es una especie de getter que nos permitirá leer dichas variables desde el archivo de **funcionalidad.test.js**. Por lo tanto creamos la siguiente función antes del module.exports
+
+funcionalidad.js
+```js
+function getVariables(){
+    return { operandoa, operandob, operacion }
+}
+```
+
+Ahora finalmente tenemos todo listo para empezar a escribir nuestras suites y los casos de prueba dentro de ellas.

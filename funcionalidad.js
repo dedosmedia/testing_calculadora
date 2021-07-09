@@ -114,3 +114,9 @@ function resolver(){
   resetear();
   resultado.textContent = res;
 }
+
+function getVariables(){
+    return { operandoa, operandob, operacion }
+}
+
+module.exports = { limpiar, resetear, resolver, init, getVariables }
