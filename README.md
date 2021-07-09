@@ -170,3 +170,16 @@ Suite: Pruebas de función limpiar()
 Suite: Pruebas de función resolver()
 - [X] Que el método resolver() funcione correctamente para las cuatro operaciones matemáticas.
 
+
+En este punto con todas las pruebas ya escritas, podemos pedirle a **jest** que ejecute nuestras pruebas.
+Para ello vamos a la línea de comandos y escribimos:
+
+>npm run test:coverage
+
+Esto nos debería ejecutar las prueebas, y al mismo tiempo crear una carpeta con información detallada sobre la cobertura de nuestro proyecto.
+Al abrir el html de coverage, se podrá observar que casi el 100% del código está siendo cubierto por estos casos de prueba.
+
+
+Esperamos que este paso a paso les ayude a entender un poco mejor el proceso desde el principio hasta el fin.
+
+[FIN]
