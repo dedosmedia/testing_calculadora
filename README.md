@@ -137,3 +137,36 @@ function getVariables(){
 ```
 
 Ahora finalmente tenemos todo listo para empezar a escribir nuestras suites y los casos de prueba dentro de ellas.
+
+
+**Paso 5.**
+
+Lo primero que hacemos es escribir nuestra suite, que agrupará varios test relacionados. Para ello se usa una estructura similar a la que se muestra a continuación:
+
+```js
+describe('Nombre del grupo de pruebas (suite)', ()=>{
+    test('Nombre de la prueba individual',()=>{
+        // Aquí la lógica de prueba
+    })
+})
+```
+
+el **describe** nos permite agrupar varias pruebas relacionadas bajo un mismo nombre, y **test** nos permite ir creando una a una las pruebas que conforman dicho grupo o suite.
+
+Por ahora solo crearemos todas las pruebas del init(), los comentarios respecto a estas pruebas los encuentras en **funcionalidad.test.js**
+Basicamente probamos
+
+Suite: Prueba del método init()
+- [X] Que los botones del 0 al 9 tengan todos el evento onClick, esto es que muestren en la pantalla el valor de la tecla clickeada.
+- [X] Que los botones de las operaciones suma, resta, multiplicación y división funcionen 
+- [X] Que los botones de igual y reset ('c') funcionen
+
+Suite: Probar funcionalidad de resetear()
+- [X] Que el método resetear() inicialice las variables
+
+Suite: Pruebas de función limpiar()
+- [X] Que el método limpiar() limpie el contenido de la pantalla (resultado.textContent)
+
+Suite: Pruebas de función resolver()
+- [X] Que el método resolver() funcione correctamente para las cuatro operaciones matemáticas.
+
