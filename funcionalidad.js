@@ -3,20 +3,6 @@ var operandoa;
 var operandob;
 var operacion;
 
-exports.setVars= (a, b, op) =>{
-    if (a){
-        operandoa =a;
-    }
-    if (b){
-        operandob =b;
-    }
-    if (op){
-        operacion =op;
-    }
-    const vars = [operandoa,operandob,operacion]
-    return vars;
-}
-
 function init(){
   //variables
   var resultado = document.getElementById('resultado');
@@ -98,16 +84,8 @@ function init(){
   
 }
 
-exports.init= () =>{
-    init();
-}
-
 function limpiar(){
   resultado.textContent = "";
-}
-
-exports.limpiar= () =>{
-    limpiar();
 }
 
 function resetear(){
@@ -115,10 +93,6 @@ function resetear(){
   operandoa = 0;
   operandob = 0;
   operacion = "";
-}
-
-exports.resetear= () =>{
-    resetear();
 }
 
 function resolver(){
@@ -139,8 +113,4 @@ function resolver(){
   }
   resetear();
   resultado.textContent = res;
-}
-
-exports.resolver= () =>{
-    resolver();
 }
