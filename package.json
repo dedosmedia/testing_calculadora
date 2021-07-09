@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/dedosmedia/testing_calculadora/issues"
   },
-  "homepage": "https://github.com/dedosmedia/testing_calculadora#readme"
+  "homepage": "https://github.com/dedosmedia/testing_calculadora#readme",
+  "devDependencies": {
+    "jest": "^27.0.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
