@@ -4,7 +4,8 @@
   "description": "En este paso vamos a convetir este proyecto en un proyecto de NodeJS.\r Para ello necesitamos crear el archivo package.json \r Que no lo creamos manualmente, sino que lo creamos ejecutando en la línea de comandos:\r >npm init -y",
   "main": "funcionalidad.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --env=jsdom",
+    "test:coverage": "jest --coverage --env=jsdom"
   },
   "repository": {
     "type": "git",
@@ -19,8 +20,5 @@
   "homepage": "https://github.com/dedosmedia/testing_calculadora#readme",
   "devDependencies": {
     "jest": "^27.0.6"
-  },
-  "dependencies": {
-    "express": "^4.17.1"
   }
 }
