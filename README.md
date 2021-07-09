@@ -4,5 +4,7 @@ Para poder iniciar con el proyecto es necesario haber instalado NodeJS en nuestr
 
 En este momento tenemos un proyecto web muy sencillo que es una calculadora y basicamente está conformada por un html, css y js.
 >calculadora.html
+
 >estilo.css
+
 >funcionalidad.js
